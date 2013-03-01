@@ -1,9 +1,8 @@
 # ZSH Theme - based on 'bira' theme
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-#local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
-local user_host='%{$fg_bold[green]%}%n%{$reset_color%}%{$fg_bold[red]%}@%{$reset_color%}%{$fg_bold[green]%}%m%{$reset_color%}'
-local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
+local user_host='%{$fg_bold[green]%}%n%{$reset_color%}%{$fg_bold[red]%}@%{$reset_color%}%{$fg_bold[cyan]%}%m%{$reset_color%}'
+local current_dir='%{$reset_color%}%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
 local rvm_ruby=''
 if which rvm-prompt &> /dev/null; then
   rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
